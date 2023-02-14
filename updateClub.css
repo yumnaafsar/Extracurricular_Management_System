@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+    background-image: url('images/bg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section{
+    padding-top: 45px;
+}
+
+
+form{
+    border: 2px solid white;
+    border-radius: 22px;
+    width: 60%;
+    margin: auto;
+    /* Fallback color */
+    background: rgb(0, 0, 0); 
+    /* Black background with 0.5 opacity */
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+table{
+    border-spacing:23px;
+    border-radius:22px ;
+   
+}
+h3{
+    font-size: 30px;
+    /* color: black; */
+}
+table tr{
+    text-align: center;
+    font-size: 20px;
+}
+
+table td{
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
+
+input{
+    text-align: center;
+    /* height: 24px; */
+    font-size: 20px;
+    width: 100%;
+}
+table textarea{
+    height: 200px;
+    width: 100%;
+}

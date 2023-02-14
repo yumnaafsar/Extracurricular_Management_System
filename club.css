@@ -1,0 +1,229 @@
+/* CSS RESET */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: rgb(236, 229, 229);
+}
+/* CSS Variable */
+:root {
+    --navbar-height: 55px;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position:relative;
+    top: 0px;
+    height: 6rem;
+    background-color: rgb(236, 229, 229);
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/*Navigation bar: logo and image */
+#logo {
+    margin: 11px 33px;
+}
+
+#logo img {
+    margin: 7px 18px;
+    height: 56px;
+}
+
+/*Navigation bar: List Styling */
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+#navbar ul li a {
+    color: black;
+    background-color: azure;
+    display: block;
+    padding: 3px 23px;
+    border-radius: 20px;
+    text-decoration: none;
+    /* margin: 0px 10px; */
+    margin: 10px;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: rgb(236, 229, 229);
+}
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 365px;
+    padding: 30px 200px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    color: white;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 600px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    
+}
+/* Clubs Section */
+.clubs-container{
+    margin: 180px;
+}
+#clubs{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+#clubs .box{
+    background-color: #f1e9e9;
+    border: 2px solid brown;
+    border-radius: 23px;
+    margin: 20px 20px;
+    padding:34px;
+}
+
+.club-img{
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+}
+
+.top {
+    animation-name: fade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    position: relative;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+#clubs .box p{
+    font-family: 'Bree Serif', serif;
+}
+.box-btn{
+    background-color: black;
+    border-radius: 5px;
+    height: 35px;
+    width: 70px;
+    padding: 5px;
+    margin: 0 auto;
+    margin-top: 19px;
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+}
+.box-btn a {
+    text-decoration: none;
+    color: white;
+    padding-left: 5px;
+}
+
+
+/* Footer */
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+/* Utility classes */
+
+#home h1{
+    color: black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.2rem;
+    padding: 16px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}

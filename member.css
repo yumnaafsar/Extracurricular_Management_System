@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body,html{
+    height: 100%;
+    background: url('images/mbg.jpg') no-repeat center center/cover;
+}
+
+/* Section */
+.h-primary{
+    font-size: 3.8rem;
+    color: white;
+    padding-bottom: 30px;
+    padding-top: 49px;
+    text-decoration: underline;
+}
+.center{
+    text-align: center;
+}
+
+section{
+    padding-top:45px;
+}
+/*Form */
+
+form{
+    border: 2px solid white;
+    border-radius: 22px;
+    /* height: 90%; */
+    width: 40%;
+    margin: auto;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+}
+
+/* Table */
+
+table{
+    border-spacing:23px;
+    margin: 10px;
+    margin-left: 90px;
+}
+table tr{
+    text-align: center;
+    font-size: 20px;
+}
+
+table td{
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
+
+table input{
+    border-radius: 21px;
+    text-align: center;
+    height: 24px;
+}
+
+button{
+   width: 100%;
+   height: 40%;
+   margin: auto;
+   padding: 6px;
+   border-radius: 22px;
+   border: 2px solid black;
+   font-size: 15px;
+}
+
+button:hover{
+    background-color: gray;
+}

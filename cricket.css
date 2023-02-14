@@ -1,0 +1,293 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(250, 246, 246);
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    position:relative;
+    top: 0px;
+    height: 4rem;
+    background-color: transparent;
+    justify-content: flex-end;
+}
+/*Navigation bar: List Styling */
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+    
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+#navbar ul li a {
+    color: white;
+    background-color: transparent;
+    display: block;
+    padding: 3px 23px;
+    border-radius: 20px;
+    text-decoration: none;
+    /* margin: 0px 10px; */
+    margin: 10px;
+}
+
+#navbar ul li a:hover{
+    color: white;
+    background-color: saddlebrown;
+}
+
+/* image */
+
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 24px;
+}
+
+.parallax{
+    background-image: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(180, 174, 164, 0.742) 100%),url('images/cricket1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height:100vh;
+    width: 100%;
+}
+
+.overlay{
+    width:100%;
+    height: 100%;
+    font-size: 26px;
+    color: black;
+    display: flex;
+    /* justify-content:; */
+    flex-direction: column;
+    /* align-items: center; */
+    background-color: rgba(0,0,0,0);
+    padding-top: 130px;
+    padding-left: 30px;
+}
+
+.overlay h1{
+    font-size: 80px;
+    color: maroon;
+}
+.overlay button{
+    height: 50px;
+    width: 135px;
+    background-color: saddlebrown;
+    padding: 15px;
+    border-radius: 15px;
+    border-style: none;
+    margin-left: 280px;
+}
+.overlay button a{
+    color: white;
+    text-decoration: none;
+}
+
+/* quote Section */
+
+#quote{
+    /* background-color: blue; */
+    height: 150px;
+    padding: 30px;
+}
+
+#quote-div{
+    /* background-color: yellow; */
+    font-size: 30px;
+    display: flex;
+    justify-content:center ;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Past events section */
+
+#events{
+    padding: 30px;
+}
+#events > h1{
+    text-align: center;
+    padding: 40px;
+    padding-bottom: 60px;
+    font-size: 50px;
+}
+#event-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    
+}
+.event-content{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    text-align: center;
+    width: 35%;
+    height: 550px;   
+}
+
+.event-content img{
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+.event-content h1{
+    font-size: 35px;
+    padding-top: 15px;
+}
+/* Video sec */
+#video-sec{
+    margin-top: 80px;
+    background-color: aqua;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+}
+#video-sec h1{
+    text-align:center;
+    font-size: 2.5rem;
+    background-color: white;
+    padding: 20px;
+    margin-top: 100px;
+    z-index: 1;
+    opacity: 0.4;
+}
+#video-sec p{
+    width: 800px;
+    margin-top: 50px;
+    font-size: 25px;
+    text-align: center;
+    z-index: 1;
+    color: bisque;
+}
+#video-sec div{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+}
+
+
+video{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+/* Teams section */
+
+#team-div{
+    display: flex;
+    flex-direction: row;
+    height: 490px;
+    padding-top: 40px;
+}
+.description{
+    padding: 100px 10px 5px 15px;
+    width: 40%;
+}
+.description>h1{
+    font-size: 50px;
+}
+.description>p{
+    font-size: 25px;
+    padding-top: 20px;
+}
+.team-desc{
+    width: 60%;
+    display: flex;
+    padding: 50px;
+}
+.team{
+    height: 400px;
+    margin: 20px;
+    width: 400px;
+}
+
+.team >img{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+}
+.team > h2{
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+}
+.team > p{
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Achievement section */
+
+#achievement-div{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    padding-top: 40px;
+}
+.description{
+    padding: 100px 10px 5px 15px;
+    width: 40%;
+}
+.description>h1{
+    font-size: 50px;
+}
+.description>p{
+    font-size: 25px;
+    padding-top: 20px;
+}
+.a-desc{
+    width: 60%;
+    display: flex;
+    padding: 50px;
+}
+.achieve{
+    height: 400px;
+    margin: 20px;
+    width: 400px;
+}
+
+.achieve>img{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+}
+.achieve> h2{
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+}
+.achieve>h3{
+    text-align: center;
+}
+.achieve> p{
+    text-align: center;
+    font-size: 20px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+}
